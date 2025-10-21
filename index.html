@@ -18,13 +18,232 @@
 		<!-- link css and bs  -->
 		<link
 			rel="stylesheet"
-			href="/css/style.css" />
+			href="/css/bootstrap.css" />
 		<link
 			rel="stylesheet"
-			href="/css/bootstrap.css" />
+			href="/css/style.css" />
 		<!-- link css and bs  -->
+
+		<!-- link font awosome  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<!-- link font awosome  -->
 	</head>
 	<body>
+		<!-- full web hold in this div   -->
+		<div class="container-fluid m-0 p-0 vh-100">
+			<div
+				class="bg-img vh-100"
+				id="backg">
+				<div
+					class="bg-col vh-100 d-flex justify-content-center align-items-center"
+					id="col">
+					<!-- open option -->
+					<div
+						class="pe-5 ps-5 pt-3 pb-3 gap-4 border border-2 rounded-4 back-fil"
+						id="option">
+						<div class="text-white fs-5 text-center">
+							Click The Button To Open Your Virtual Keyboard
+						</div>
+
+						<div class="d-flex justify-content-center mt-3">
+							<button
+								class="btnn"
+								id="btn">
+								Open
+							</button>
+						</div>
+					</div>
+					<!-- opening option  -->
+					<div
+						class="w-100"
+						id="keey">
+						<div
+							class="container text-center mt-4 d-flex flex-column justify-content-center align-items-center">
+							<div class="mb-3 w-100">
+								<textarea
+									class="form-control text-area-resp"
+									id="output"
+									rows="3"
+									placeholder="Your Output will appear here..."></textarea>
+							</div>
+
+							<div
+								class="keyboard container pt-2 pb-2 pe-4 ps-4 rounded-4 bg-secondary bubble-container">
+								<!-- row 1 open  -->
+								<div
+									class="row d-flex justify-content-md-between gap-2 gap-md-0 justify-content-center">
+									<div class="key bubble">`</div>
+									<div class="key bubble">1</div>
+									<div class="key bubble">2</div>
+									<div class="key bubble">3</div>
+									<div class="key bubble">4</div>
+									<div class="key bubble">5</div>
+									<div class="key bubble">6</div>
+									<div class="key bubble">7</div>
+									<div class="key bubble">8</div>
+									<div class="key bubble">9</div>
+									<div class="key bubble">0</div>
+									<div class="key bubble d-none d-md-block">
+										-
+									</div>
+									<div class="key bubble d-none d-md-block">
+										=
+									</div>
+									<div
+										class="w-auto key d-none d-md-block"
+										id="clean"
+										draggable="true">
+										Backspace
+									</div>
+								</div>
+								<!-- row 1 close  -->
+
+								<!-- row 2 open  -->
+								<div
+									class="row d-flex justify-content-md-between gap-2 gap-md-0 justify-content-center mt-2">
+									<div
+										class="key d-none d-md-block"
+										id="gapt"
+										draggable="true">
+										Tab
+									</div>
+									<div class="key bubble">Q</div>
+									<div class="key bubble">W</div>
+									<div class="key bubble">E</div>
+									<div class="key bubble">R</div>
+									<div class="key bubble">T</div>
+									<div class="key bubble">Y</div>
+									<div class="key bubble">U</div>
+									<div class="key bubble">I</div>
+									<div class="key bubble">O</div>
+									<div class="key bubble">P</div>
+									<div class="key bubble d-none d-md-block">
+										[
+									</div>
+									<div class="key bubble d-none d-md-block">
+										]
+									</div>
+									<div class="key bubble d-none d-md-block">
+										\
+									</div>
+								</div>
+								<!-- row 2 close  -->
+
+								<!-- row 3 open  -->
+								<div
+									class="row d-flex justify-content-md-between gap-2 gap-md-0 justify-content-center mt-2">
+									<div
+										class="key d-none d-md-block"
+										id="new">
+										<i class="fa-solid fa-globe"></i>
+									</div>
+									<div class="key bubble">A</div>
+									<div class="key bubble">S</div>
+									<div class="key bubble">D</div>
+									<div class="key bubble">F</div>
+									<div class="key bubble">G</div>
+									<div class="key bubble">H</div>
+									<div class="key bubble">J</div>
+									<div class="key bubble">K</div>
+									<div class="key bubble">L</div>
+									<div class="key bubble d-none d-md-block">
+										:
+									</div>
+									<div class="key bubble d-none d-md-block">
+										"
+									</div>
+									<div
+										class="key d-none d-md-block"
+										id="lineesc"
+										draggable="true">
+										Enter
+									</div>
+								</div>
+								<!-- row 3 close  -->
+
+								<!-- row 4 open  -->
+								<div
+									class="row d-flex justify-content-md-between gap-2 gap-md-0 justify-content-center mt-2 mb-2">
+									<div
+										class="key d-block d-md-none"
+										id="uolow">
+										<i class="fa-solid fa-up-long"></i>
+									</div>
+									<div
+										class="key d-none d-md-block"
+										draggable="true"
+										id="exchangealpha">
+										Shift
+									</div>
+									<div class="key bubble">Z</div>
+									<div class="key bubble">X</div>
+									<div class="key bubble">C</div>
+									<div class="key bubble">V</div>
+									<div class="key bubble">B</div>
+									<div class="key bubble">N</div>
+									<div class="key bubble">M</div>
+									<div class="key bubble d-none d-md-block">
+										<
+									</div>
+									<div class="key bubble d-none d-md-block">
+										>
+									</div>
+									<div class="key bubble d-none d-md-block">
+										/
+									</div>
+									<div class="key bubble d-none d-md-block">
+										?
+									</div>
+									<button
+										class="key d-none d-md-block text-white bg-danger border border-danger"
+										id="closebtn">
+										Close
+									</button>
+									<div
+										class="key d-block d-md-none"
+										id="clean2">
+										<i class="fa-solid fa-delete-left"></i>
+									</div>
+								</div>
+								<!-- row 4 close  -->
+								<!-- row 5 open  -->
+								<div
+									class="row d-flex justify-content-center gap-2">
+									<div
+										class="key d-block d-md-none"
+										id="new">
+										<i class="fa-solid fa-globe"></i>
+									</div>
+
+									<div
+										class="key w-75"
+										id="gap"
+										draggable="true">
+										SPACE
+									</div>
+
+									<div
+										class="key d-block d-md-none d-flex justify-content-center align-items-center"
+										id="lineesc2">
+										<img
+											src="/Assets/enter.png"
+											alt="enter-icon" />
+									</div>
+								</div>
+								<!-- row 5 close  -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- full web hold in this div   -->
+
 		<!-- link js   -->
 		<script src="/js/bootstrap.bundle.js"></script>
 		<script src="/js/app.js"></script>
